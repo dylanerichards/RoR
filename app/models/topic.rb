@@ -1,4 +1,4 @@
 class Topic < ActiveRecord::Base
-   extend FriendlyId
+  extend FriendlyId
   friendly_id :name, use: :slugged
 end

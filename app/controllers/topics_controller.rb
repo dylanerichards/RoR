@@ -1,4 +1,6 @@
 class TopicsController < ApplicationController
+  skip_before_action :set_topic, only: [:index, :new, :create]
+  
   def index
     @topics = Topic.all
   end
@@ -8,15 +10,12 @@ class TopicsController < ApplicationController
   end
 
   def show
-    @topic = Topic.friendly.find(params[:id])
   end
 
   def edit
-    @topic = Topic.friendly.find(params[:id])
   end
 
   def update
-    topic = Topic.friendly.find(params[:id])
     topic.update_attributes(topic_params)
 
     redirect_to topic
@@ -30,7 +29,6 @@ class TopicsController < ApplicationController
   end
 
   def destroy
-    @topic = Topic.friendly.find(params[:id])
     @topic.destroy
 
     redirect_to root_path
