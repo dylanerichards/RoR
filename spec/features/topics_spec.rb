@@ -7,6 +7,8 @@ feature "Topics" do
   scenario 'can be created' do
     visit "/topics/new"
 
+    expect(page).to have_content "New Topic"
+
     fill_in "Name", with: "HTML"
     fill_in "Content", with: "foo"
 

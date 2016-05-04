@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root "topics#index"
 
-  resource :topics, only: [:index, :new, :create]
+  resources :topics, only: [:index, :new, :create, :show]
 end

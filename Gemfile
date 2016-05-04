@@ -20,6 +20,7 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
