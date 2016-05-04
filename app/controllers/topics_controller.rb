@@ -8,15 +8,15 @@ class TopicsController < ApplicationController
   end
 
   def show
-    @topic = Topic.find(params[:id])
+    @topic = Topic.friendly.find(params[:id])
   end
 
   def edit
-    @topic = Topic.find(params[:id])
+    @topic = Topic.friendly.find(params[:id])
   end
 
   def update
-    topic = Topic.find(params[:id])
+    topic = Topic.friendly.find(params[:id])
     topic.update_attributes(topic_params)
 
     redirect_to topic
@@ -30,7 +30,7 @@ class TopicsController < ApplicationController
   end
 
   def destroy
-    @topic = Topic.find(params[:id])
+    @topic = Topic.friendly.find(params[:id])
     @topic.destroy
 
     redirect_to root_path
