@@ -6,7 +6,10 @@ describe "Topics" do
     end
 
     scenario 'can be created' do
-      create_topic(name: "HTML", content: "foo")
+      expect {
+        create_topic(name: "HTML", content: "foo")
+      }.to change(Topic, :count).by 1
+
       visit "/"
 
       expect(page).to have_content "HTML"
@@ -21,6 +24,21 @@ describe "Topics" do
 
         expect(page).to have_content "HTML"
         expect(page).to have_content "foo"
+      end
+    end
+
+    feature "delete" do
+      scenario "topic can be deleted from show page" do
+        create_topic(name: "HTML", content: "foo")
+
+        visit root_path
+        click_on "HTML"
+
+        expect {
+          click_on "delete"
+        }.to change(Topic, :count).by -1
+
+
       end
     end
 
