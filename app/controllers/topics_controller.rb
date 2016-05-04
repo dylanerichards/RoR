@@ -1,4 +1,6 @@
 class TopicsController < ApplicationController
+  
+  before_action :set_topic
   skip_before_action :set_topic, only: [:index, :new, :create]
   
   def index
@@ -38,5 +40,9 @@ class TopicsController < ApplicationController
 
   def topic_params
     params.require(:topic).permit(:name, :content)
+  end
+
+  def set_topic
+    @topic = Topic.friendly.find(params[:id])
   end
 end
