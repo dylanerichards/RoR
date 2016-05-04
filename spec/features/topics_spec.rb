@@ -55,7 +55,7 @@ describe "Topics" do
     scenario "topic can be edited" do
       create_topic(name: "HTML", content: "foo")
 
-      visit "/topics/1"
+      visit "/topics/html"
 
       click_on "edit"
 

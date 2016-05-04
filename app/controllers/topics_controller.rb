@@ -12,13 +12,13 @@ class TopicsController < ApplicationController
   def show
   end
 
-  def edit
+  def edit 
   end
 
   def update
-    topic.update_attributes(topic_params)
+    @topic.update_attributes(topic_params)
 
-    redirect_to topic
+    redirect_to @topic
   end
 
   def create
