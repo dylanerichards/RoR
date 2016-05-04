@@ -1,7 +1,6 @@
 class TopicsController < ApplicationController
   
-  before_action :set_topic
-  skip_before_action :set_topic, only: [:index, :new, :create]
+  before_action :set_topic, only: [:show, :edit, :update, :destroy]
   
   def index
     @topics = Topic.all
