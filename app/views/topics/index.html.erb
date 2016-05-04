@@ -1,5 +1,10 @@
 <h1>Listing All Topics</h1>
 
+<%= link_to "new topic", new_topic_path %>
+
+<br />
+<br />
+
 <ul>
   <% @topics.each do |topic| %>
     <li><%= link_to topic.name, topic %></li>

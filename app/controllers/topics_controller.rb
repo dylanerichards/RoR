@@ -11,6 +11,17 @@ class TopicsController < ApplicationController
     @topic = Topic.find(params[:id])
   end
 
+  def edit
+    @topic = Topic.find(params[:id])
+  end
+
+  def update
+    topic = Topic.find(params[:id])
+    topic.update_attributes(topic_params)
+
+    redirect_to topic
+  end
+
   def create
     @topic = Topic.new(topic_params)
     @topic.save!

@@ -40,6 +40,22 @@ describe "Topics" do
 
 
       end
+
+      feature "edit" do
+        scenario "topic can be edited" do
+          create_topic(name: "HTML", content: "foo")
+
+          visit "/topics/1"
+
+          click_on "edit"
+
+          fill_in "Name", with: "New Name"
+
+          click_on "Update Topic"
+
+          expect(page).to have_content "New Name"
+        end
+      end
     end
 
     private
