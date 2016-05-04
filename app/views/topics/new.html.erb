@@ -1,0 +1,8 @@
+<%= form_for @topic do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %>
+  <%= f.label :content, "Content" %>
+  <%= f.text_area :content, cols: "50", rows: "30" %>
+
+  <%= f.submit %>
+<% end %>
