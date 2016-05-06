@@ -1,7 +1,6 @@
 class TopicsController < ApplicationController
-  
   before_action :set_topic, only: [:show, :edit, :update, :destroy]
-  
+
   def index
     @topics = Topic.all
   end
@@ -13,7 +12,7 @@ class TopicsController < ApplicationController
   def show
   end
 
-  def edit 
+  def edit
   end
 
   def update
