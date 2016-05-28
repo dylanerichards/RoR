@@ -1,17 +1,3 @@
 <h1>New Topic </h1>
 
-<br>
-
-<%= form_for @topic do |f| %>
-  <div class="form-group">
-    <%= f.label :name, "Name" %>
-    <%= f.text_field :name, class: "form-control" %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :content, "Content" %>
-    <%= f.text_area :content, class: 'wysihtml5', :size => "136x20" %>
-  </div>
-
-  <%= f.submit nil, class: "btn btn-primary" %>
-<% end %>
+<%= render "form" %>
