@@ -20,6 +20,7 @@
 $(document).ready(function() {
 
   $('.wysihtml5').each(function(i, elem) {
-   $(elem).wysihtml5({ toolbar:{ "fa": true } });
+   $(elem).wysihtml5({ toolbar:{ "fa": true, "html": true } });
   });
+
 });
