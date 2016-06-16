@@ -1,8 +1,10 @@
-<%= link_to "edit", edit_topic_path(@topic)  %> |
-<%= link_to "delete", topic_path, method: :delete, data: { confirm: "Are you sure?" } %>
+<div class="container">
+  <%= link_to "edit", edit_topic_path(@topic)  %> |
+  <%= link_to "delete", topic_path, method: :delete, data: { confirm: "Are you sure?" } %>
 
-<h1><%= @topic.name %></h1>
+  <h1><%= @topic.name %></h1>
 
-<div>
-  <%= simple_format @topic.content %>
+  <div>
+    <%= simple_format @topic.content %>
+  </div>
 </div>
