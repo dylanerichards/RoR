@@ -1,14 +1,15 @@
 <div class="container">
-	<h1>Listing All Topics</h1>
+  <h1>Listing All Topics</h1>
 
-	<%= link_to "new topic", new_topic_path %>
+  <%= link_to "new topic", new_topic_path %>
 
-	<br />
-	<br />
+  <br />
+  <br />
 
-	<ul>
-	  <% @topics.each do |topic| %>
-	    <li><%= link_to topic.name, topic %> | <%= link_to "edit", edit_topic_path(topic) %></li>
-	  <% end %>
-	</ul>
+  <ul>
+    <% @topics.each do |topic| %>
+      <li><%= link_to topic.name, topic %> | <%= link_to "edit", edit_topic_path(topic) %></li>
+    <% end %>
+  </ul>
+
 </div>

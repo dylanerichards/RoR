@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root "pages#home"
+
+	root "topics#index"
+	
   get "topics" => "topics#index"
+  get "pages/home"
+
   resources :topics
 end
