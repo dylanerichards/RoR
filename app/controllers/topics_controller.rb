@@ -25,13 +25,13 @@ class TopicsController < ApplicationController
     @topic = Topic.new(topic_params)
     @topic.save!
 
-    redirect_to root_path
+    redirect_to topics_path
   end
 
   def destroy
     @topic.destroy
 
-    redirect_to root_path
+    redirect_to topics_path
   end
 
   private
