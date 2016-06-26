@@ -67,6 +67,9 @@ GEM
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
+    devicon-rails (1.0.2)
+      rails (~> 4)
+      sass-rails (~> 5)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.6.0)
@@ -242,6 +245,7 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.1.0)
+  devicon-rails
   font-awesome-rails
   friendly_id (~> 5.1.0)
   guard-rspec
@@ -262,4 +266,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.11.2
+   1.12.4

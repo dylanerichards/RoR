@@ -24,6 +24,7 @@ end
 gem 'bootstrap-sass'
 gem 'bootstrap-wysihtml5-rails'
 gem 'coffee-rails', '~> 4.1.0'
+gem 'devicon-rails'
 gem 'font-awesome-rails'
 gem 'friendly_id', '~> 5.1.0'
 gem 'jbuilder', '~> 2.0'
