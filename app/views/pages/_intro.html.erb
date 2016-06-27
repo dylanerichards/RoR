@@ -1,7 +1,7 @@
 <!--Intro Section-->
 <section id="intro" class="intro-fullscreen">
   <!--Static Hero-->
- <div class="intro-media bg-image overlay-dark20" data-background-img=""></div>
+  <div class="intro-media bg-image overlay-dark20" data-background-img=""></div>
 
   <div class="intro-caption-waper dark-bg">
     <div class="intro-full-height container">
@@ -9,18 +9,18 @@
         <div class="intro-content-inner">
 
           <h1 class= "intro-title">
-          <span class="bold-text">Become a developer</span> and build Ruby on Rails applications <span class="bold-text">in 2 months.</span></h1>
+            <span class="bold-text">Become a developer</span> and build Ruby on Rails applications <span class="bold-text in-two-months"></span></h1>
 
           <h4 class="page-title-alt color mb-45">
-          We are full-stack developers teaching web development.</h4>
+            We are full-stack developers teaching web development.</h4>
 
           <a class="btn btn-lg btn-white scroll-down" href="#service">
-          Why us over bootcamp?</a>
+            Why us over bootcamp?</a>
 
           <div class = "intro-stack">
 
             <div class="col-sm-2">
-                <i class="devicon-html5-plain intro-tech-icon"></i>
+              <i class="devicon-html5-plain intro-tech-icon"></i>
               <h6 class="page-title-alt color mb-45 tech-name">HTML / CSS</h6>
             </div>
 
@@ -40,7 +40,7 @@
             </div>
 
             <div class="col-sm-2">
-                <i class="devicon-travis-plain intro-tech-icon"></i>
+              <i class="devicon-travis-plain intro-tech-icon"></i>
               <h6 class="page-title-alt color mb-45 tech-name">Testing</h6>
             </div>
 
@@ -59,3 +59,22 @@
 
 </section>
 <!-- End Intro Section-->
+
+<script src="/js/typetype.js"></script>
+
+<script>
+$('.in-two-months').typetype(
+    'in 2 months.',
+    {
+      e: 0.04, // error rate. (use e=0 for perfect typing)
+      t: 100, // interval between keypresses
+      keypress: function (){
+        // called after every keypress (this may be an erroneous keypress!)
+
+      },
+      callback: function (){
+        // the `this` keyword is bound to the particular element.
+      }
+    }
+    )
+</script>
