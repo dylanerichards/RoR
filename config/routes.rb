@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   get "/roadmap" => "topics#index"
 
-  get "/introduction" => "pages#introduction"
+  get "/introduce-yourself" => "pages#introduction", as: "introduce_yourself"
 
   resources :topics
 end
