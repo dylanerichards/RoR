@@ -1,33 +1,27 @@
 class ResponsesController < ApplicationController
   before_action :set_response, only: [:show, :edit, :update, :destroy]
 
-  # GET /responses
-  # GET /responses.json
   def index
     @responses = Response.all
   end
 
-  # GET /responses/1
-  # GET /responses/1.json
   def show
   end
 
-  # GET /responses/new
   def new
     @response = Response.new
   end
 
-  # GET /responses/1/edit
   def edit
   end
 
-  # POST /responses
-  # POST /responses.json
   def create
     @response = Response.new(response_params)
 
     respond_to do |format|
       if @response.save
+        ResponseMailer.response_email(params[:full_name]).deliver
+
         format.html { redirect_to @response, notice: 'Response was successfully created.' }
         format.json { render :show, status: :created, location: @response }
       else
@@ -37,8 +31,6 @@ class ResponsesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /responses/1
-  # PATCH/PUT /responses/1.json
   def update
     respond_to do |format|
       if @response.update(response_params)
@@ -51,8 +43,6 @@ class ResponsesController < ApplicationController
     end
   end
 
-  # DELETE /responses/1
-  # DELETE /responses/1.json
   def destroy
     @response.destroy
     respond_to do |format|
@@ -62,12 +52,10 @@ class ResponsesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_response
       @response = Response.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def response_params
       params.require(:response).permit(:full_name, :email, :body)
     end
