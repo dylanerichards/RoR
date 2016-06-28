@@ -22,7 +22,7 @@ class ResponsesController < ApplicationController
       if @response.save
         ResponseMailer.response_email(params[:response][:full_name]).deliver_now
 
-        format.html { redirect_to @response, notice: 'Response was successfully created.' }
+        format.html { redirect_to root_path, notice: 'See you soon!' }
         format.json { render :show, status: :created, location: @response }
       else
         format.html { render :new }
