@@ -1,0 +1,6 @@
+$tooltip-bg: #c7a674;
+// doesn't work, probably some conflict with bootstrap wysiwy being rendered
+// before bootstrap-sprockets/bootstrap
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
