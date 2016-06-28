@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   end
 
   def introduction
+    @response = Response.new
   end
 
 end

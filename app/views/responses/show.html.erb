@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Full name:</strong>
+  <%= @response.full_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @response.email %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @response.body %>
+</p>
+
+<%= link_to 'Edit', edit_response_path(@response) %> |
+<%= link_to 'Back', responses_path %>

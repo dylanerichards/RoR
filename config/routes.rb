@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :responses
   root "pages#home"
 
   get "/roadmap" => "topics#index"
