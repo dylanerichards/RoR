@@ -20,7 +20,7 @@ class ResponsesController < ApplicationController
 
     respond_to do |format|
       if @response.save
-        ResponseMailer.response_email(params[:full_name]).deliver
+        ResponseMailer.response_email(params[:response][:full_name]).deliver_now
 
         format.html { redirect_to @response, notice: 'Response was successfully created.' }
         format.json { render :show, status: :created, location: @response }

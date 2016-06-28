@@ -3,6 +3,7 @@ class ResponseMailer < ApplicationMailer
 
   def response_email(full_name)
     @full_name = full_name
+
     mail(to: "team@rubyonrichards.com", subject: "Introduction from #{full_name}")
   end
 end
