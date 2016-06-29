@@ -24,24 +24,8 @@
           <div class="pricing-button pricing-padding">
             <%# <a class="btn btn-md btn-black" href="http://google.com/" ><i class="fa fa-dollar left"></i>Purchase</a> %>
 
-            <%= form_tag charges_path do %>
-              <article>
-                <% if flash[:error].present? %>
-                  <div id="error_explanation">
-                    <p><%= flash[:error] %></p>
-                  </div>
-                <% end %>
-                <label class="amount">
-                  <span>Amount: $5.00</span>
-                </label>
-              </article>
+            <%= render "layouts/stripe_button" %>
 
-              <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="500"
-          data-locale="auto"></script>
-            <% end %>
           </div>
         </div>
       </div>

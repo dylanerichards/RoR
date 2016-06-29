@@ -1,0 +1,28 @@
+<%= form_tag charges_path, id: 'chargeForm' do %>
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+  <%= hidden_field_tag 'stripeToken' %>
+  <%= hidden_field_tag 'stripeEmail' %>
+  <button id="customButton" class="btn btn-large btn-primary">Buy Now</button>
+
+  <script>
+    var handler = StripeCheckout.configure({
+      key: '<%= ENV["STRIPE_PUBLISHABLE"] %>',
+      image: '/assets/my_logo.png',
+      token: function(token, args) {
+        document.getElementById("stripeToken").value = token.id;
+        document.getElementById("stripeEmail").value = token.email;
+        document.getElementById("chargeForm").submit();
+      }
+    });
+
+    document.getElementById('customButton').addEventListener('click', function(e) { 
+      // Open Checkout with further options
+      handler.open({
+        name: 'Ruby on Richards',
+        description: 'Interested Plan ($70.00)',
+        amount: 70*100,
+      });
+      e.preventDefault();
+    });
+  </script>
+<% end %>
