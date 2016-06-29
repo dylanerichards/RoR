@@ -31,6 +31,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
+gem 'stripe'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'tzinfo-data' # Needed for Windows to use friendly_id
 gem 'uglifier', '>= 1.3.0'

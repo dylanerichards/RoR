@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get "/introduce-yourself" => "pages#introduction", as: "introduce_yourself"
 
   resources :topics
+  resources :charges
 end
