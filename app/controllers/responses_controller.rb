@@ -20,7 +20,7 @@ class ResponsesController < ApplicationController
 
     respond_to do |format|
       if @response.save
-        ResponseMailer.response_email(params[:response][:full_name]).deliver_now
+        ResponseMailer.response_email(params[:response][:full_name], params[:response][:body]).deliver_now
 
         format.html { redirect_to root_path, notice: 'See you soon!' }
         format.json { render :show, status: :created, location: @response }
