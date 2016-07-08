@@ -1750,11 +1750,13 @@ form label.error {
 .header-fixed .logo a {
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 160px;
+    width: 45px;
     transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -webkit-transition: all 0.3s ease 0s;
+    position: relative;
+    bottom: 25px;
 }
 
 .header-fixed .nav-menu ul.nav-menu-inner li a {
@@ -1763,13 +1765,13 @@ form label.error {
 
 @media all and (max-width: 1024px) {
     .header {
-        height: 65px;
+        height: 70px;
     }
 
         .header .logo a {
             margin-top: 15px;
             margin-bottom: 15px;
-            width: 160px;
+            width: 140px;
             transition: all 0.3s ease 0s;
             -o-transition: all 0.3s ease 0s;
             -moz-transition: all 0.3s ease 0s;
@@ -1785,7 +1787,7 @@ form label.error {
 }
 
     .logo a {
-        width: 180px;
+        width: 100px;
         display: block;
         margin-top: 30px;
         margin-bottom: 30px;
