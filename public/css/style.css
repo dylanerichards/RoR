@@ -2523,6 +2523,9 @@ ul.portfolio-btn-wraper, .portfolio-btn-wraper {
 .team-item {
     padding-left: 15px;
     padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 350px;
 }
 
 .team-item-img {
