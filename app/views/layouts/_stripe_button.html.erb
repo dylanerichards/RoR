@@ -7,7 +7,7 @@
   <script>
     var handler = StripeCheckout.configure({
       key: '<%= ENV["STRIPE_PUBLISHABLE"] %>',
-      image: '/assets/my_logo.png',
+      image: 'img/logo.svg',
       token: function(token, args) {
         document.getElementById("stripeToken").value = token.id;
         document.getElementById("stripeEmail").value = token.email;
