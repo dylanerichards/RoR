@@ -1771,7 +1771,7 @@ form label.error {
         .header .logo a {
             margin-top: 15px;
             margin-bottom: 15px;
-            width: 140px;
+            width: 30px;
             transition: all 0.3s ease 0s;
             -o-transition: all 0.3s ease 0s;
             -moz-transition: all 0.3s ease 0s;
@@ -2521,11 +2521,9 @@ ul.portfolio-btn-wraper, .portfolio-btn-wraper {
 
 /* Team Box   ||-------------------*/
 .team-item {
-    padding-left: 15px;
-    padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 350px;
+    max-width: 250px;
 }
 
 .team-item-img {
@@ -3067,7 +3065,7 @@ ul.portfolio-btn-wraper, .portfolio-btn-wraper {
 
 /*Footer Logo*/
 .footer-logo a {
-    max-width: 183px;
+    max-width: 75px;
     display: inline-block;
 }
 
