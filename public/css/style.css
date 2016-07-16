@@ -2939,6 +2939,11 @@ ul.portfolio-btn-wraper, .portfolio-btn-wraper {
         margin-left: 5px;
     }
 
+    .pricing-price .pricing-price-md {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
     .pricing-price .pricing-price-lg {
         font-size: 60px;
         font-weight: 600;

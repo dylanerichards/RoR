@@ -11,6 +11,25 @@
    Remodal's default mobile first theme
    ========================================================================== */
 
+/*modal content*/
+#modal-content {
+  img {
+    border:1px solid #bfbfbf;
+    margin-bottom: 5px;
+  }
+  h3 {
+    font-size:32px;
+    color:#c7a674;
+  }
+  p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+}
+
+
+
 /* Default theme styles for the background */
 
 .remodal-bg.remodal-is-opening,
