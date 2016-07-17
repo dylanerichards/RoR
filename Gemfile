@@ -24,6 +24,7 @@ end
 gem 'bootstrap-sass'
 gem 'bootstrap-wysihtml5-rails'
 gem 'coffee-rails', '~> 4.1.0'
+gem 'clearance'
 gem 'devicon-rails'
 gem 'figaro'
 gem 'font-awesome-rails'

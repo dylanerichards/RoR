@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160628044629) do
+ActiveRecord::Schema.define(version: 20160717180429) do
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -43,5 +43,18 @@ ActiveRecord::Schema.define(version: 20160628044629) do
   end
 
   add_index "topics", ["slug"], name: "index_topics_on_slug", unique: true
+
+  create_table "users", force: :cascade do |t|
+    t.string   "full_name"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.string   "email",                          null: false
+    t.string   "encrypted_password", limit: 128
+    t.string   "confirmation_token", limit: 128
+    t.string   "remember_token",     limit: 128, null: false
+  end
+
+  add_index "users", ["email"], name: "index_users_on_email"
+  add_index "users", ["remember_token"], name: "index_users_on_remember_token"
 
 end
