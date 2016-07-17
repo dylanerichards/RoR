@@ -6,8 +6,8 @@ Rails.application.routes.draw do
 
   get "/introduce-yourself" => "pages#introduction", as: "introduce_yourself"
 
+  post "/newsletter-signup" => "users#newsletter_signup", as: "newsletter_signup"
+
   resources :topics
   resources :charges
-
-  post "/newsletter-signup" => "users#newsletter_signup", as: "newsletter_signup"
 end

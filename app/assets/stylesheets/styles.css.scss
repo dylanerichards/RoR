@@ -38,3 +38,13 @@
   // background-color: #f5f5f5 !important;
   // border-color: #f5f5f5 !important;
 }
+
+*::selection {
+  color: #fff;
+  background: #dccbb1;
+}
+
+.newsletter-info {
+  color: #333;
+  font-weight: bold;
+}
