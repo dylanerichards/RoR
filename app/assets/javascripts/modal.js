@@ -1,8 +1,8 @@
-$( document ).ready(function() {
+$(document).ready(function() {
   var firstTime = localStorage.getItem('visited');
 
-  if (firstTime != '1'){
-		window.location = "#modal"
+  if (firstTime != '1') {
+		window.location = "#modal";
 		localStorage.setItem('visited', '1');
   }
 });
