@@ -8,11 +8,15 @@
 			  </p>
 		  <br>
 	  </div>
-	<form class="form-inline">
+
+	<form class="form-inline" method="post">
 	  <div class="form-group">
-	    <label for="exampleInputEmail2">Email</label>
-	    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="student@example.com">
+	    <label for="email">Email</label>
+	    <input type="email" class="form-control" name="email" id="email" placeholder="student@example.com">
 	  </div>
-	  <button type="submit" class="btn btn-md btn-color">Subscribe!</button>
+	  <button type="submit" class="btn btn-md btn-color" formaction="/newsletter-signup">
+	  	Subscribe!
+	  </button>
 	</form>
+
 </div>

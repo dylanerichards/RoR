@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   resources :topics
   resources :charges
+
+  post "/newsletter-signup" => "users#newsletter_signup", as: "newsletter_signup"
 end

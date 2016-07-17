@@ -24,4 +24,7 @@ Rails.application.configure do
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
+
+  #Clearance set-up, forget your password?
+  config.action_mailer.default_url_options = { host: 'rubyonrichards.com' }
 end
