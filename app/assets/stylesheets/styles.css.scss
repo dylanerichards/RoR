@@ -38,3 +38,8 @@
   // background-color: #f5f5f5 !important;
   // border-color: #f5f5f5 !important;
 }
+
+*::selection {
+  color: #fff;
+  background: #dccbb1;
+}
