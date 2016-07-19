@@ -1,38 +1,46 @@
 <!--Footer Section-->
-    <footer id="footer" class="footer section-padding gray-bg">
-      <div class="container text-center">
+<footer id="footer" class="footer section-padding gray-bg">
+  <div class="container text-center">
 
-        <!--Footer Logo-->
-        <div class="footer-logo mb-25 wow fadeInUp" data-wow-duration="1.5s">
-          <a class="scroll-top" href="/">
-            <img src="img/logo.png"/>
-            </a>
-        </div>
-        <!--End Footer Logo-->
-
-        <!-- Copyright -->
-        <p class="copyright mb-25 scroll-top">
-        &copy; 2016 <b><%= link_to 'Ruby on Richards', root_path %></b>. All Rights Reserved.<br>
-        </p>
-        <!-- Copyright -->
-
-        <!-- Social -->
-        <!-- <ul class="social">
-          <li>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
-          </li>
-        </ul> -->
-        <!-- End Social -->
-
+    <!--Footer Logo-->
+    <% if action_name == "home" %>
+      <div class="footer-logo mb-25 wow fadeInUp" data-wow-duration="1.5s">
+        <a class="scroll-top" href="/">
+          <img src="img/logo.png"/>
+        </a>
       </div>
-    </footer>
-    <!-- End Footer Section-->
+    <% else %>
+      <div class="footer-logo mb-25 wow fadeInUp" data-wow-duration="1.5s">
+        <a href="/">
+          <img src="img/logo.png"/>
+        </a>
+      </div>
+    <% end %>
+    <!--End Footer Logo-->
+
+    <!-- Copyright -->
+    <p class="copyright mb-25 scroll-top">
+    &copy; 2016 <b><%= link_to 'Ruby on Richards', root_path %></b>. All Rights Reserved.<br>
+    </p>
+    <!-- Copyright -->
+
+    <!-- Social -->
+    <!-- <ul class="social">
+      <li>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+      </li>
+      <li>
+      <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li>
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </li>
+      <li>
+      <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+      </li>
+      </ul> -->
+      <!-- End Social -->
+
+  </div>
+</footer>
+<!-- End Footer Section-->
