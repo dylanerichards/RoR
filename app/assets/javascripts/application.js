@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require tether
 //= require bootstrap-sprockets
 //= require bootstrap-wysihtml5
 //= require_tree .
