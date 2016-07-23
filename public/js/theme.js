@@ -432,7 +432,7 @@
             autoHeight: true,
             stopOnHover: true,
             singleItem: true,
-            slideSpeed: 350,
+            slideSpeed: 150,
             pagination: true,  // Show pagination buttons
             navigation: false,  // Hide next and prev buttons
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
