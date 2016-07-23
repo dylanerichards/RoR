@@ -52,3 +52,10 @@
 .fake-hidden {
   color: #f5f5f5;
 }
+
+.your-clock{
+  zoom: 0.5;
+  -moz-transform: scale(0.5);
+  position: relative;
+  left: 300px;
+}
