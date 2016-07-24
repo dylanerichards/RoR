@@ -6,4 +6,8 @@ class UsersController < Clearance::UsersController
     flash[:notice] = "Thanks for signing up!"
     redirect_to root_path
   end
+
+  def emails
+    @emails = User.all.map(&:email)
+  end
 end
