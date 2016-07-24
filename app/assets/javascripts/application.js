@@ -23,7 +23,7 @@ $(document).ready(function() {
     $(elem).wysihtml5({ toolbar:{ "fa": true, "html": true } });
   });
 
-  var date = new Date(2016, 10, 26, 0,0,0,0);
+  var date = new Date(2016, 8, 0, 0,0,0,0);
   var today = new Date();
   var dif = date.getTime() - today.getTime();
   var timeLeft = Math.abs(dif/1000)/60;
