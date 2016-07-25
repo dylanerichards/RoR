@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   def authenticate
     authenticate_or_request_with_http_basic('Administration') do |username, password|
-      username == 'rubyonrichards' && password == 'thisiscool'
+      username == 'rubyonrichards' && password == 'thisisnotcool'
     end
   end
 end
