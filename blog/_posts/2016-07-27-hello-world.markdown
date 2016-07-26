@@ -10,8 +10,12 @@ Hello world. `code`
 {% highlight ruby %}
 
 class Person
-  def some_method(argument)
-    operate_on(argument)
+  def initialize(arguments)
+    @name = arguments.fetch(:name, "Null User")
+  end
+
+  def greet(name)
+    "Hey, #{name}!"
   end
 end
 
