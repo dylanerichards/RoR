@@ -19,4 +19,7 @@ class Person
   end
 end
 
+person = Person.new({name: "Dylan"})
+puts person.greet #=> "Hey, Dylan!"
+
 {% endhighlight %}
