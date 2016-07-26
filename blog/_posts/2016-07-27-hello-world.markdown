@@ -1,13 +1,11 @@
 ---
 post_author: Geoff Blair
 layout: post
-title:  "Hello World"
+title:  "Welcome to the Ruby on Richards Blog"
 date:   2016-07-27
-categories: jekyll update
+categories: ruby on richards blog launch programming test
 ---
 Hello world. `code`
-
-Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
 

@@ -6,15 +6,13 @@
 </description>
     <link>http://rubyonrichards.com/blog/</link>
     <atom:link href="http://rubyonrichards.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 26 Jul 2016 09:27:53 -0700</pubDate>
-    <lastBuildDate>Tue, 26 Jul 2016 09:27:53 -0700</lastBuildDate>
+    <pubDate>Tue, 26 Jul 2016 09:32:51 -0700</pubDate>
+    <lastBuildDate>Tue, 26 Jul 2016 09:32:51 -0700</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Hello World</title>
+        <title>Welcome to the Ruby on Richards Blog</title>
         <description>&lt;p&gt;Hello world. &lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Person&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;some_method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argument&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -24,13 +22,23 @@
 
 </description>
         <pubDate>Wed, 27 Jul 2016 00:00:00 -0700</pubDate>
-        <link>http://rubyonrichards.com/blog/jekyll/update/2016/07/27/hello-world.html</link>
-        <guid isPermaLink="true">http://rubyonrichards.com/blog/jekyll/update/2016/07/27/hello-world.html</guid>
+        <link>http://rubyonrichards.com/blog/ruby/on/richards/blog/launch/programming/test/2016/07/27/hello-world.html</link>
+        <guid isPermaLink="true">http://rubyonrichards.com/blog/ruby/on/richards/blog/launch/programming/test/2016/07/27/hello-world.html</guid>
         
         
-        <category>jekyll</category>
+        <category>ruby</category>
         
-        <category>update</category>
+        <category>on</category>
+        
+        <category>richards</category>
+        
+        <category>blog</category>
+        
+        <category>launch</category>
+        
+        <category>programming</category>
+        
+        <category>test</category>
         
       </item>
     
