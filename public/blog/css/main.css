@@ -160,6 +160,9 @@ pre {
   .site-title, .site-title:visited {
     color: #424242; }
 
+a.site-title {
+  color: #c7a674 !important; }
+
 .site-nav {
   float: right;
   line-height: 56px; }
