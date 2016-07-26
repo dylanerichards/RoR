@@ -231,6 +231,7 @@ GEM
     redcarpet (3.3.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    rouge (2.0.5)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -327,6 +328,7 @@ DEPENDENCIES
   rails-assets-tether (>= 1.1.0)!
   rails_12factor
   rake (>= 11.2.2)
+  rouge
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
