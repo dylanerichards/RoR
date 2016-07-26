@@ -31,6 +31,7 @@ gem 'flipclockjs-rails', '~> 0.7.7'
 gem 'font-awesome-rails'
 gem 'friendly_id', '~> 5.1.0'
 gem 'jbuilder', '~> 2.0'
+gem 'jekyll', '2.5.3' # Blog
 gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
 gem 'stripe'
