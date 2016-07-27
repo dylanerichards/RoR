@@ -650,3 +650,7 @@ h2.month {
   background: #c7a674 !important;
   color: #ffffff !important;
 }
+
+.display-block {
+  display: block !important;
+}
