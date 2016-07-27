@@ -10,9 +10,9 @@ highlighter: rouge
 paginate: 5
 baseurl: "/blog/"
 domain_name: 'http://rubyonrichards.com/blog'
-google_analytics: 'UA-XXXXXXXX-X'
-disqus: false
-disqus_shortname: 'your-disqus-shortname'
+google_analytics: 'UA-80910236-1'
+disqus: true
+disqus_shortname: 'http-www-rubyonrichards-com'
 
 # Details for the RSS feed generator
 url:            'http://www.rubyonrichards.com/blog'
