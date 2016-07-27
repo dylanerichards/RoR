@@ -1,5 +1,5 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
+name: Ruby on Richards Blog
+description: Your personal code mentor.
 meta_description: "Your New Jekyll Site, Blogging about stuffs"
 
 aboutPage: true
@@ -7,17 +7,17 @@ aboutPage: true
 markdown: kramdown
 highlighter: rouge
 
-paginate: 20
+paginate: 5
 baseurl: "/blog/"
-domain_name: 'http://yourblog-domain.com'
+domain_name: 'http://rubyonrichards.com/blog'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: false
 disqus_shortname: 'your-disqus-shortname'
 
 # Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
-author:         'Your Name'
-authorTwitter:  'YourTwitterUsername'
+url:            'http://www.rubyonrichards.com/blog'
+author:         'Ruby on Richards'
+authorTwitter:  'rubyonrichards'
 
 permalink:       /:year/:title/
 

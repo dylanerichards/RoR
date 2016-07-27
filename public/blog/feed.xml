@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Your New Jekyll Site</title>
-    <description>Blogging about stuffs</description>
-    <link>http://your-blog-url.example.com</link>
-    <atom:link href="http://your-blog-url.example.com/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Ruby on Richards Blog</title>
+    <description>Your personal code mentor.</description>
+    <link>http://www.rubyonrichards.com/blog</link>
+    <atom:link href="http://www.rubyonrichards.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -16,8 +16,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 </description>
         
         <pubDate>Sun, 10 Nov 2013 02:18:00 -0800</pubDate>
-        <link>http://your-blog-url.example.com/2013/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://your-blog-url.example.com/2013/welcome-to-jekyll/</guid>
+        <link>http://www.rubyonrichards.com/blog/2013/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://www.rubyonrichards.com/blog/2013/welcome-to-jekyll/</guid>
       </item>
     
   </channel>
