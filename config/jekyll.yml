@@ -2,7 +2,7 @@ name: Ruby on Richards Blog
 description: Your personal code mentor.
 meta_description: "Your New Jekyll Site, Blogging about stuffs"
 
-aboutPage: true
+aboutPage: false
 
 markdown: kramdown
 highlighter: rouge
