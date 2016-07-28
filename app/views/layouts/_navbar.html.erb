@@ -1,35 +1,21 @@
-<!-- Header -->
-<div id="header" class="header">
-  <div class="header-inner">
-    <!-- Logo -->
-    <div class="logo navbar-brand" >
-      <a href="/">
-        <img src="img/logo.svg" />
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="<%= root_path %>">
+        <%= image_tag("/img/logo.png")%>
       </a>
     </div>
-    <!-- End Logo -->
 
-    <!--Navigation Icon-->
-    <div class="nav-menu-icon">
-      <a><i class="fa fa-bars"></i></a>
-    </div>
-    <!--End Navigation Icon-->
-
-    <!-- Navigation Menu -->
-    <div class="nav-menu singlepage-nav">
-      <ul class="nav-menu-inner">
-        <%# <li><a href="#intro">Home</a></li> %>
-        <%# <li><a href="#about">About</a></li> %>
-        <%# <li><a href="#latest-work">Work</a></li> %>
-        <%# <li><a href="#service">Service</a></li> %>
-        <%# <li><a href="#pricing">Pricing</a></li> %>
-        <%# <li><a href="#client">Client</a></li> %>
-        <%# <li><a href="#elements">Elements</a></li> %>
-        <%# <li><a href="#contact-us">Contact</a></li> %>
-        <%# <li><a class="nav-external all-demos-link" target="_blank">Demos</a></li> %>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
       </ul>
-    </div>
-    <!-- End Navigation Menu -->
-  </div>
-</div>
-<!-- End Header -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

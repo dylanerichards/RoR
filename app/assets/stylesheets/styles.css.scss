@@ -18,6 +18,22 @@
   margin-top: 99px;
 }
 
+.nav-adjustment {
+  margin-top: -40px;
+}
+
+.navbar{
+  position: fixed !important;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+  img {
+    max-height: 250%;
+    margin-top: -15px;    
+  }
+}
 .questions li {
   font-size: 1.2em;
   line-height: 1.5em;
