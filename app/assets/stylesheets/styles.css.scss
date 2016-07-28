@@ -29,6 +29,8 @@
   top: 0;
   z-index: 100;
   border-top: 0;
+  background-color: red;
+  border-radius:0px !important;
   img {
     max-height: 250%;
     margin-top: -15px;    
@@ -37,11 +39,6 @@
 .questions li {
   font-size: 1.2em;
   line-height: 1.5em;
-}
-
-.navbar-brand {
-  // position: relative;
-  // bottom: 12px;
 }
 
 .alert {
