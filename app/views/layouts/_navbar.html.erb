@@ -1,35 +1,71 @@
-<!-- Header -->
-<div id="header" class="header">
-  <div class="header-inner">
-    <!-- Logo -->
-    <div class="logo navbar-brand" >
-      <a href="/">
-        <img src="img/logo.svg" />
-      </a>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%# <a class="navbar-brand" href="#">Project name</a> %>
     </div>
-    <!-- End Logo -->
-
-    <!--Navigation Icon-->
-    <div class="nav-menu-icon">
-      <a><i class="fa fa-bars"></i></a>
-    </div>
-    <!--End Navigation Icon-->
-
-    <!-- Navigation Menu -->
-    <div class="nav-menu singlepage-nav">
-      <ul class="nav-menu-inner">
-        <%# <li><a href="#intro">Home</a></li> %>
-        <%# <li><a href="#about">About</a></li> %>
-        <%# <li><a href="#latest-work">Work</a></li> %>
-        <%# <li><a href="#service">Service</a></li> %>
-        <%# <li><a href="#pricing">Pricing</a></li> %>
-        <%# <li><a href="#client">Client</a></li> %>
-        <%# <li><a href="#elements">Elements</a></li> %>
-        <%# <li><a href="#contact-us">Contact</a></li> %>
-        <%# <li><a class="nav-external all-demos-link" target="_blank">Demos</a></li> %>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
       </ul>
-    </div>
-    <!-- End Navigation Menu -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../navbar/">Default</a></li>
+        <li><a href="../navbar-static-top/">Static top</a></li>
+        <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
   </div>
-</div>
-<!-- End Header -->
+</nav> <!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%# <a class="navbar-brand" href="#">Project name</a> %>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <%# <li class="active"><a href="#">Home</a></li> %>
+        <%# <li><a href="#about">About</a></li> %>
+        <%# <li><a href="#contact">Contact</a></li> %>
+        <%# <li class="dropdown"> %>
+        <%#   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a> %>
+        <%#   <ul class="dropdown-menu"> %>
+        <%#     <li><a href="#">Action</a></li> %>
+        <%#     <li><a href="#">Another action</a></li> %>
+        <%#     <li><a href="#">Something else here</a></li> %>
+        <%#     <li role="separator" class="divider"></li> %>
+        <%#     <li class="dropdown-header">Nav header</li> %>
+        <%#     <li><a href="#">Separated link</a></li> %>
+        <%#     <li><a href="#">One more separated link</a></li> %>
+        <%#   </ul> %>
+        <%# </li> %>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/blog">BLOG</a></li>
+        <li><a class="say-hello" href="/introduce-yourself">SAY HELLO</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
