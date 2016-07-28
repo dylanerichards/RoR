@@ -78,3 +78,15 @@
     color: #c7a674;
   }
 }
+
+.pulsing {
+  -webkit-animation: pulsate 2.0s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.0
+}
+
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(0.8, 0.8); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.0;}
+}
