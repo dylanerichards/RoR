@@ -1,21 +1,24 @@
 <div class="page-adjustment"></div>
 
-<div class="container">
-  <h1>Introduce Yourself</h1>
+<div id= "introduction" class="container">
+  <h2>Introduce Yourself</h2>
 
   <div class="col-md-6">
-    <h2>Questions</h2>
 
-    <ol class="questions">
+    <p><b>Tell us more about yourself so we can understand your needs as a programmer. 
+    Please use the questions below to frame your response. We want to ensure that we are 
+    a good match.</b></p> 
+
+    <ul class="questions">
       <li>Why do you want to build web applications?</li>
       <li>How much time do you have per week to dedicate to learning?</li>
       <li>Tell us about an achievement of yours that you are proud of.</li>
       <li>What are your favorite fiction and non-fiction books? Why?</li>
-    </ol>
+    </ul>
   </div>
 
   <div class="col-md-6">
-    <h2>Response</h2>
+    <h3>Your Response</h3>
 
     <%= form_for @response do |f| %>
       <div class="form-group">
