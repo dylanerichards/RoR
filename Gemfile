@@ -33,13 +33,14 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jekyll', '2.5.3' # Blog
 gem 'jquery-rails'
+gem 'rake', '>= 11.2.2'
+gem 'rouge'
 gem 'sass-rails', '~> 5.0'
 gem 'stripe'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'tzinfo-data' # Needed for Windows to use friendly_id
 gem 'uglifier', '>= 1.3.0'
-gem 'rake', '>= 11.2.2'
-gem 'rouge'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform? #some windows BS
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
