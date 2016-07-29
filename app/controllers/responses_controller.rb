@@ -1,4 +1,5 @@
 class ResponsesController < ApplicationController
+
   before_action :set_response, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -58,4 +59,5 @@ class ResponsesController < ApplicationController
   def response_params
     params.require(:response).permit(:full_name, :email, :body)
   end
+
 end

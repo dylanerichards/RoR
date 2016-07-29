@@ -72,3 +72,48 @@
   position: relative;
   left: 300px;
 }
+
+.navbar-default {
+  background-color: #222222 !important;
+  border-color: #222222 !important;
+}
+
+.navbar-default .navbar-nav > li > a.say-hello {
+  color: #c7a674;
+}
+
+#introduction{
+  p {
+    font-size: 1.15em;
+  }
+
+  h2, h3 {
+    color: #c7a674;
+  }
+}
+
+.pulsing {
+  -webkit-animation: pulsate 2.0s ease-out;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.0
+}
+
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(0.8, 0.8); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.1, 1.1); opacity: 0.0;}
+}
+
+.pricing-box {
+  height: 550px !important;
+}
+
+.developer-trial {
+  position: relative;
+  bottom: 10px;
+}
+
+.entrepreneur-button {
+  position: relative;
+  bottom: 48px;
+}
