@@ -653,9 +653,3 @@ h2.month {
 .display-block {
   display: block !important;
 }
-
-#post-body {
-  width: 900px !important;
-  position: relative;
-  right: 160px;
-}
