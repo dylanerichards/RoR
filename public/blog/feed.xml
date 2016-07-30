@@ -7,16 +7,18 @@
     <atom:link href="http://www.rubyonrichards.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>This is a Sample Post</title>
+        <title>Project Euler Series: Problem 1</title>
         
         
-          <description>&lt;p&gt;The better. ;)&lt;/p&gt;
+          <description>&lt;p&gt;Solving the problems on Projet Euler is a great way to dive into programming. In this post, I’d like to
+solve Problem 1, while covering some Ruby language fundamentals. We’ll look at three different approaches to
+solving the same problem.&lt;/p&gt;
 
 </description>
         
-        <pubDate>Tue, 26 Jul 2016 00:00:00 -0700</pubDate>
-        <link>http://www.rubyonrichards.com/blog/2016/sample-post/</link>
-        <guid isPermaLink="true">http://www.rubyonrichards.com/blog/2016/sample-post/</guid>
+        <pubDate>Thu, 28 Jul 2016 00:00:00 -0700</pubDate>
+        <link>http://www.rubyonrichards.com/blog/2016/project-euler-problem-1/</link>
+        <guid isPermaLink="true">http://www.rubyonrichards.com/blog/2016/project-euler-problem-1/</guid>
       </item>
     
   </channel>
