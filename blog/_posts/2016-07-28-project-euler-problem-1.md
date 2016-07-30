@@ -132,7 +132,7 @@ And there you have it.
 
 # Iteration 3
 
-We can do <i>a little bit<better/i>, though. <strong>Array#select</strong> allows us to, well,
+We can still do <i>a little bit better</i>, though. <strong>Array#select</strong> allows us to, well,
 <i>select</i> elements in an array that match a condition. It won't return nil for elements that don't
 match, which will save us from having to remove nil elements from the array before adding them up.
 
