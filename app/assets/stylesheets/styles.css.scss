@@ -18,14 +18,16 @@
   margin-top: 99px;
 }
 
+.navbar{
+  img {
+    max-height: 180%;
+    margin-top: -8px;    
+  }
+}
+
 .questions li {
   font-size: 1.2em;
   line-height: 1.5em;
-}
-
-.navbar-brand {
-  // position: relative;
-  // bottom: 12px;
 }
 
 .alert {
