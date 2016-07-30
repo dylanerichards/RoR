@@ -76,7 +76,7 @@ Now we just need to add them up.
 
 <pre>
   <code class="ruby">
-    p multiples.reduce(0) { |sum, i| sum + i }
+    p multiples.reduce(0) { |sum, i| sum + i } # => 233168
   </code>
 </pre>
 
@@ -106,11 +106,40 @@ Let's sum them up.
   </code>
 </pre>
 
-
-# Iteration 3
+Wait -- What's this?
 
 <pre>
   <code class="ruby">
-    p (1..999).select { |num| num % 3 == 0 || num % 5 == 0 }.reduce(:+)
+    euler-1.rb:5:in each: undefined method '+' for nil:NilClass (NoMethodError)
+    from euler-1.rb:5:in reduce
+    from euler-1.rb:5:in main
   </code>
 </pre>
+
+This error is telling us that the addition method isn't available on an element in
+our array, which happens to be nil. Why are there nil elements in the array? Simple.
+Our <strong>map</strong> returned nil for each element that didn't match the condition.
+
+Before we can sum the array, we must first remove the nil elements with <strong>Array#compact</strong>.
+
+<pre>
+  <code class="ruby">
+    numbers.compact.reduce(&:+) #=> 233168
+  </code>
+</pre>
+
+And there you have it.
+
+# Iteration 3
+
+We can do <i>a little bit<better/i>, though. <strong>Array#select</strong> allows us to, well,
+<i>select</i> elements in an array that match a condition. It won't return nil for elements that don't
+match, which will save us from having to remove nil elements from the array before adding them up.
+
+<pre>
+  <code class="ruby">
+    p (1..999).select { |num| num % 3 == 0 || num % 5 == 0 }.reduce(:+) #=> 233168
+  </code>
+</pre>
+
+And that's it.
