@@ -76,7 +76,7 @@ Now we just need to return the answer.
 
 <pre>
   <code class="ruby">
-    p answer #=> 233168
+    p answer # => 233168
   </code>
 </pre>
 
