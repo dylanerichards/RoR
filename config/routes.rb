@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   post "/newsletter-signup" => "users#newsletter_signup", as: "newsletter_signup"
 
   resources :charges
-  resources :responses
+  resources :responses, except: [:index, :show]
   resources :topics
 end
