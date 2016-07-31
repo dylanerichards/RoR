@@ -51,7 +51,7 @@ the answer value.
 <pre>
   <code class="ruby">
     if number % 3 == 0 || number % 5 == 0
-      answer += number # => Add the number into the eventual answer if it's evenly divisible by 3 or 5
+      answer += number # => Add the number to the eventual answer if it's evenly divisible by 3 or 5
     end
   </code>
 </pre>
