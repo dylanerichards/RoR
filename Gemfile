@@ -21,6 +21,7 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+gem "animate-rails"
 gem 'bootstrap-sass'
 gem 'bootstrap-wysihtml5-rails'
 gem 'clearance'
