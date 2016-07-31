@@ -27,11 +27,11 @@ The first thing we'll need is a collection of numbers from 1 to 999.
   </code>
 </pre>
 
-Next, we'll need somewhere to put the numbers that are multiples of 3 of 5.
+Next, we'll need a starting value.
 
 <pre>
   <code class="ruby">
-    multiples = [] # => An empty array to push the multiples into
+    answer = 0
   </code>
 </pre>
 
@@ -45,13 +45,13 @@ Here's the fun part. Let's use an each loop to iterate over each of those number
   </code>
 </pre>
 
-Every time we encounter a number that's a multiple of either 3 or 5, we need to push it
-into the multiples array. Put the following into the block:
+Every time we encounter a number that's a multiple of either 3 or 5, we need to increment
+the answer value.
 
 <pre>
   <code class="ruby">
     if number % 3 == 0 || number % 5 == 0
-      multiples << number # => Push the number into the multiples array if it's evenly divisible by 3 or 5
+      answer += number # => Add the number into the eventual answer if it's evenly divisible by 3 or 5
     end
   </code>
 </pre>
@@ -61,22 +61,22 @@ You should now have this:
 <pre>
   <code class="ruby">
     numbers = (1..999).to_a
-    multiples = []
+    answer = 0
 
     numbers.each do |number|
       if number % 3 == 0 || number % 5 == 0
-        multiples << number
+        answer += number
       end
     end
   </code>
 </pre>
 
 
-Now we just need to add them up.
+Now we just need to return the answer.
 
 <pre>
   <code class="ruby">
-    p multiples.reduce(0) { |sum, i| sum + i } # => 233168
+    p answer #=> 233168
   </code>
 </pre>
 
