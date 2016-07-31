@@ -10,7 +10,7 @@
         <title>Project Euler Series: Problem 1</title>
         
         
-          <description>&lt;p&gt;Solving the problems on Projet Euler is a great way to dive into programming. In this post, I’d like to
+          <description>&lt;p&gt;Solving the problems on &lt;a href=&quot;http://www.projecteuler.net&quot;&gt;Projet Euler&lt;/a&gt; is a great way to dive into programming. In this post, I’d like to
 solve Problem 1, while covering some Ruby language fundamentals. We’ll look at three different approaches to
 solving the same problem.&lt;/p&gt;
 

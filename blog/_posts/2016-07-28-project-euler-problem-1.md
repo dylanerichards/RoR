@@ -5,7 +5,7 @@ date:   2016-07-28
 description: Let's solve Problem 1 together.
 ---
 
-Solving the problems on Projet Euler is a great way to dive into programming. In this post, I'd like to
+Solving the problems on [Projet Euler](http://www.projecteuler.net) is a great way to dive into programming. In this post, I'd like to
 solve Problem 1, while covering some Ruby language fundamentals. We'll look at three different approaches to
 solving the same problem.
 
